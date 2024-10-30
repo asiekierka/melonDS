@@ -2090,6 +2090,8 @@ QString EmuInstance::gbaAddonName(int addon)
         return "Rumble Pak";
     case GBAAddon_RAMExpansion:
         return "Memory expansion";
+    case GBAAddon_MotionPak:
+        return "Motion Pak";
     }
 
     return "???";

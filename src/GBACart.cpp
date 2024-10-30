@@ -874,6 +874,9 @@ void GBACartSlot::LoadAddon(void* userdata, int type) noexcept
     case GBAAddon_RumblePak:
         Cart = std::make_unique<CartRumblePak>(userdata);
         break;
+    case GBAAddon_MotionPak:
+        Cart = std::make_unique<CartMotionPak>(userdata);
+        break;
 
     default:
         Log(LogLevel::Warn, "GBACart: !! invalid addon type %d\n", type);
